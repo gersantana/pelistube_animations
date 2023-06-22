@@ -15,16 +15,19 @@
 	<body class="body_container">
 		<nav class="nav_container">
 			<div class="logo">
-				<a href="#"><img src="./assets/imgs/stube-1-removebg-preview-recortada.svg" alt="logo"></span></a>
+				<a href="./index.html"><img src="./assets/imgs/stube-1-removebg-preview-recortada.svg" alt="logo"></span></a>
 			</div>
 			<div class="desktop_menu">
-				<a href="#">Categorias</a>
-				<a href="">Peliculas</a>
-				<a href="#">Series</a>
-				<a href="#">Trailers</a>
+				<a href="#options">Categorias</a>
+				<a href="#pelis">Peliculas</a>
+				<a href="#trail">Series</a>
+				<a href="#contact">Contacto</a>
 			</div>
 			<div class="hamburg_menu">
 				<i class="fa-solid fa-bars" style="color: #ffffff"></i>
+			</div>
+			<div class="description">
+				<p> <span>¡Bienvenido/a;</span> a nuestra página de películas online, tu destino cinematográfico definitivo! Aquí encontrarás una amplia selección de películas de todos los géneros y épocas, diseñada para satisfacer los gustos de los amantes del cine de todo el mundo.</p>
 			</div>
 		</nav>
 
@@ -38,12 +41,15 @@
 				<option value="ficcion">ficcion</option>
 				<option value="series">Series</option>
 			</select>
+			<div class="description_2">
+				<p> <span>¡Bienvenido/a;</span> a nuestra página de películas online, tu destino cinematográfico definitivo! Aquí encontrarás una amplia selección de películas de todos los géneros y épocas, diseñada para satisfacer los gustos de los amantes del cine de todo el mundo.</p>
+			</div>
 		</section>
 
 		<main class="main_container">
 			<div class="movie_container">
 				<!-- CARD 1 -->
-				<div class="card_container">
+				<div class="card_container"  id="pelis">
 					<a class="movie" href="#">
 						<div class="img_container">
 							<img src="./assets/imgs/barbie.avif" alt="barbie" />
@@ -140,7 +146,7 @@
 				</div>
 				<!-- END CARD -->
 				<!-- CARD 6 -->
-				<div class="card_container">
+				<div class="card_container" id="trail">
 					<a class="movie" href="#"
 						><img src="./assets/imgs/mario.avif" alt="mario" />
 						<h2>Super Mario Bros</h2>
@@ -208,7 +214,8 @@
 		</main>
 
 		<footer class="footer_container">
-			<div class="social_media">
+			<h5>Contactanos</h5>
+			<div class="social_media" id="contact">
 				<a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
 				<a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
 			</div>

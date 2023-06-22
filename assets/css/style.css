@@ -138,6 +138,27 @@ img {
 	scale: 1.1;
 }
 
+.description {
+	display: none;
+}
+@media (min-width: 992px) {
+	.description {
+		display: block;
+		color: var(--White);
+		padding: 1rem;
+		font-size: 1.3rem;
+		text-align: center;
+		border-top: solid 0.1rem var(--LightGrey);
+	}
+}
+
+.description span {
+	color: var(--LightBlue);
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-decoration: underline;
+}
+
 /* FILTER */
 .seach_filter {
 	grid-area: seach_filter;
@@ -159,6 +180,31 @@ img {
 .seach_filter select {
 	width: 70%;
 	border-radius: 0.5rem;
+}
+
+.description_2 {
+	display: none;
+}
+@media (min-width: 586px) {
+	.description_2 {
+		display: block;
+		padding: 2rem;
+		text-align: center;
+		color: var(--White);
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 992px) {
+	.description_2 {
+		display: none;
+	}
+}
+
+.description_2 span {
+	color: var(--LightBlue);
+	text-decoration: underline;
+	font-size: 1.6rem;
+	font-weight: 700;
 }
 /* MAIN */
 
@@ -266,6 +312,14 @@ img {
 	color: var(--White);
 }
 
+.carrusel a:hover, a:focus {
+	color: var(--LightBlue);
+}
+
+.carrusel a:focus {
+	color: rgb(23, 79, 148);
+}
+
 /* FOOTER */
 .footer_container {
 	grid-area: footer;
@@ -285,20 +339,58 @@ img {
     }
 }
 
+.footer_container h5 {
+	color: var(--White);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
 .social_media {
 	display: flex;
 	justify-content: center;
-	gap: 5rem;
+	gap: 3rem;
 	padding: 0.5rem;
-}
-
-.social_media img {
-	margin: 0 auto;
-	width: 4rem;
 }
 
 .social_media a {
 	color: var(--White);
+	
+}
+
+.social_media a:hover {
+	animation: icons 1s ease 0s 1 normal forwards;
+}
+@keyframes icons {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
 }
 
 .derechos {
@@ -308,7 +400,7 @@ img {
 }
 
 .derechos span {
-	color: var(--Blue);
+	color: var(--LightBlue);
 	text-transform: uppercase;
 	font-weight: 900;
 }
