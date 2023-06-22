@@ -89,6 +89,10 @@ img {
 .desktop_menu {
 	display: none;
 }
+.desktop_menu a:hover {
+	color: #38B6FF;
+	transition: color, 0.3s ease;
+}
 @media (min-width: 576px) {
     .desktop_menu {
         display: flex;
@@ -116,16 +120,16 @@ img {
     }
 }
 
-.icon a {
-	text-decoration: none;
-	font-weight: 700;
-	color: var(--White);
+.logo {
+	max-width: 15rem;
+	height: 1rem;
+	display: flex;
+	align-items: center;
+	transition: all .3s ease;
 }
 
-.icon a span {
-	color: var(--Blue);
-	text-transform: uppercase;
-	font-weight: 900;
+.logo:hover {
+	scale: 1.1;
 }
 
 /* FILTER */
