@@ -1,6 +1,7 @@
 :root {
 	/* general colors */
 	--Blue: rgb(64, 134, 204);
+	--LightBlue: #38B6FF;
 	--White: #fff;
 	--LightGrey: #bec1bb;
 	--Black: #000000;
@@ -84,13 +85,13 @@ img {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	gap: 18rem;
+	gap: 15rem;
 }
 .desktop_menu {
 	display: none;
 }
 .desktop_menu a:hover {
-	color: #38B6FF;
+	color: var(--LightBlue);
 	transition: color, 0.3s ease;
 }
 @media (min-width: 576px) {
@@ -105,12 +106,17 @@ img {
     .hamburg_menu {
         display: none;
     }
+	.nav_container {
+		justify-content:space-between ;
+		margin: 0 1rem;
+	}
 }
 @media (min-width: 992px) {
     .nav_container {
         flex-direction: column;
         justify-content: start;
-        margin-top: 2rem;
+        margin: 0; 
+		padding-top: 3rem;
         gap: 2rem;
     }
     .desktop_menu {
@@ -188,10 +194,21 @@ img {
     .card_container {
         max-width: 20rem;
     }
-    .card_container img {
+}
+
+.card_container img {
+	filter: grayscale(80%);
+	transition: all 0.3s ease;
+}
+@media (min-width: 576px) {
+	.card_container img {
         height: 25rem;
         width: 20rem;
     }
+}
+
+.card_container img:hover {
+	filter: grayscale(0%);
 }
 
 .card_container a {
@@ -201,7 +218,7 @@ img {
 }
 
 .card_container a:hover {
-	color: var(--Blue);
+	color: var(--LightBlue);
 	text-decoration: underline;
 }
 
@@ -221,7 +238,7 @@ img {
 	color: var(--White);
 	text-decoration: none;
 	font-weight: 700;
-	background-color: var(--Blue);
+	background-color: var(--LightBlue);
 	border-radius: 0.5rem;
 	width: 100%;
 	padding: 0.2rem 0;
